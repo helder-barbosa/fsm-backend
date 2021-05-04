@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+  <p>
+    <%= time %>
+  </p>
+  <ul>
+    <% num.forEach((item)=> { %>
+      <li>
+        <%= item %>
+      </li>
+      <% }) %>
+  </ul>
+  <ul>
+    <% fruit.forEach((item)=> { %>
+      <li>
+        <%= item.name %>
+      </li>
+      <% }) %>
+  </ul>
+  <%- include('partials/footer') %>
